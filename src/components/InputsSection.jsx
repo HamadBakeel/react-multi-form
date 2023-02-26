@@ -24,12 +24,12 @@ const InputsSectionStyle = css`
   }
 `
 
-export default function InputsSection(){
+export default function InputsSection({title, subtitle}){
     return(
         <div className={InputsSectionStyle}>
             <header className="header">
-                <h2 className="title">Personal Info</h2>
-                <p className="subtitle">Please provide your name, email address, and phone number.</p>
+                <h2 className="title">{title}</h2>
+                <p className="subtitle">{subtitle}</p>
             </header>
 
             <section className="body">
