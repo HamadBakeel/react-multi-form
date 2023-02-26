@@ -2,10 +2,14 @@ import {css} from "@emotion/css";
 import { Checkbox, Form, Input } from 'antd';
 import UserInfo from "./Form Sections/UserInfo";
 import FormButton from "./Button.jsx";
+import PlanSection from "./Form Sections/PlanSection";
 
 
 const InputsSectionStyle = css`
   padding: 4% 6%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   
   .header{
     margin-bottom: 1rem;
@@ -21,10 +25,11 @@ const InputsSectionStyle = css`
   .navigationButtons{
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
   }
 `
 
-export default function InputsSection({title, subtitle}){
+export default function InputsSection({title, subtitle, activeSection}){
     return(
         <div className={InputsSectionStyle}>
             <header className="header">
@@ -33,7 +38,8 @@ export default function InputsSection({title, subtitle}){
             </header>
 
             <section className="body">
-                <UserInfo/>
+                {activeSection==="Personal Info" && <UserInfo/>}
+                {activeSection==="Plan" && <PlanSection/>}
             </section>
 
             <div className="navigationButtons">

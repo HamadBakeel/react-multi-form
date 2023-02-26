@@ -22,8 +22,11 @@ function Form() {
         <div className={formStyles}>
             <Sidebar/>
             <InputsSection
-                title={Text["Personal Info"].title}
-                subtitle={Text["Personal Info"].subTitle}
+                // title={Text["Personal Info"].title}
+                // subtitle={Text["Personal Info"].subTitle}
+                title={Text["Plan"].title}
+                subtitle={Text["Plan"].subTitle}
+                activeSection={"Plan"}
             />
         </div>
     )
