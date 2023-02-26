@@ -19,16 +19,18 @@ const stepStyles = css`
     display: flex;
     flex-direction: column;
     width: 8rem;
+    font-size: .9rem;
   }
   .number{
-    padding: 4px 11px;
+    padding: 3px 9px;
     border-radius: 50%;
     border: 1px solid var(--pastel-blue);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold; 
   }
   .step-number{
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 500;
     color: var(--pastel-blue)
   }
 `
