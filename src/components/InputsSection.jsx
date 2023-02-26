@@ -3,6 +3,7 @@ import { Checkbox, Form, Input } from 'antd';
 import UserInfo from "./Form Sections/UserInfo";
 import FormButton from "./Button.jsx";
 import PlanSection from "./Form Sections/PlanSection";
+import AddsOnSection from "./Form Sections/AddsOnSection";
 
 
 const InputsSectionStyle = css`
@@ -40,6 +41,7 @@ export default function InputsSection({title, subtitle, activeSection}){
             <section className="body">
                 {activeSection==="Personal Info" && <UserInfo/>}
                 {activeSection==="Plan" && <PlanSection/>}
+                {activeSection==="AddOns" && <AddsOnSection/>}
             </section>
 
             <div className="navigationButtons">

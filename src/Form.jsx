@@ -24,9 +24,12 @@ function Form() {
             <InputsSection
                 // title={Text["Personal Info"].title}
                 // subtitle={Text["Personal Info"].subTitle}
-                title={Text["Plan"].title}
-                subtitle={Text["Plan"].subTitle}
-                activeSection={"Plan"}
+                // title={Text["Plan"].title}
+                // subtitle={Text["Plan"].subTitle}
+                // activeSection={"Plan"}
+                title={Text["AddOns"].title}
+                subtitle={Text["AddOns"].subTitle}
+                activeSection={"AddOns"}
             />
         </div>
     )
